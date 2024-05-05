@@ -1,6 +1,4 @@
-# SYSC 4001 Assignment 2 README
-
-# Mahad Ahmed 101220427
+# Circular Buffer PC
 
 The assignment's objective is to apply message queue and semaphore/shared memory to the finite circular buffer for the producer/consumer problem, also know as P/C Problem.
 
@@ -30,3 +28,5 @@ gcc consumer.c -o consumer
 12. Producer gets key to access the shared memory, reads the input file, and writes to the shared memory
 13. **DISCLAIMER** Shared memory contains 10 buffers, each buffer has space capacity of 1024 bytes. If your input file surpasses the amount of buffers stored, it will placed on wait, then after consumer is ran and cleans out buffers, the remaining data from input file will continue to flow into buffers
 14. Consumer gets key to access the shared memory, reads the buffers in shared memory and writes to an output file until the output file size is the same as input file size.
+
+### Developed by Mahad Ahmed 
